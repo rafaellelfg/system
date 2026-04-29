@@ -7,7 +7,7 @@ This project was built using Python and Flask, integrated with a PostgreSQL.
 
 Disclaimer !!! I used Ai during the work with flask and to connect DB with my python code, it is a new framework for me. Also i consult with AI about FrontEnd part
 
-## ✨ Features
+##  Features
 
 * **Property Management**: Add new properties, view active listings, and safely archive (soft-delete) or restore properties.
 * **Client Registry**: Register new clients, categorizing them as either individuals or companies.
@@ -17,10 +17,10 @@ Disclaimer !!! I used Ai during the work with flask and to connect DB with my py
   * **Manager**: Full access to add/view objects, staff, and clients, as well as archive/restore properties.
   * **Realtor**: Access to register deals and manage property transactions.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
-* **Backend Framework**: [Flask](https://flask.palletsprojects.com/) (Python)
+* **Backend Framework**: Flask
 * **Database**: PostgreSQL
-* **Database Adapter**: `psycopg2`
-* **Frontend**: HTML/Jinja2 Templates
+* **Database Adapter**: psycopg2
+* **Frontend**: HTML Templates
 * **Development Tool**: AI-assisted programming
