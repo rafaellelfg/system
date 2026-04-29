@@ -12,11 +12,11 @@ app.secret_key = "secret"
 def get_db():
     """Create and return a new database connection and cursor."""
     conn = psycopg2.connect(
-        dbname="robert_db",
-        user="robert",
-        password="sosal1337",
+        dbname="---" #use here ur database
+        user="---- ", # use here ur user id
+        password="---", # use here ur password
         host="127.0.0.1",
-        port="1337"
+        port="---" # use here ur port
     )
     return conn, conn.cursor()
 
@@ -36,7 +36,7 @@ def add_object(cursor, conn, address, total_area, type_id, price):
     INSERT INTO objects (address, total_area, type_id, price, status_id)
     VALUES (%s, %s, %s, %s, %s) RETURNING id;
     """
-
+    # "%s" was using to avoid SQL injects
     try:
         cursor.execute(sql_command, (address, total_area, type_id, price, status_id))
         new_id = cursor.fetchone()[0]
