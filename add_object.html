@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>add new object</h2>
+<div class="card">
+    <form method="POST">
+        <label>Address</label>
+        <input type="text" name="address" required>
+
+        <label>Area</label>
+        <input type="number" step="0.01" name="total_area" required>
+
+        <label>Type</label>
+        <select name="type_id">
+            <option value="1">1 — Office</option>
+            <option value="2">2 — Warehouse</option>
+            <option value="3">3 — Shop area</option>
+        </select>
+
+        <label>Price</label>
+        <input type="number" step="0.01" name="price" required>
+
+        <button type="submit">Add</button>
+    </form>
+
+    {% if message %}
+        <div class="message {{ 'ok' if message.startswith('[+]') else 'err' }}">{{ message }}</div>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Main page</h2>
+<div style="display:flex; gap:20px; flex-wrap:wrap; margin-top:20px;">
+
+    <div class="card" style="flex:1; min-width:200px;">
+        <div class="section-title">Manager</div>
+        <a href="/manager/add_object" style="display:block; color:#4caf50; margin:10px 0;">▶ Add object</a>
+        <a href="/manager/add_client" style="display:block; color:#4caf50; margin:10px 0;">▶ Add client</a>
+        <a href="/manager/add_staff" style="display:block; color:#4caf50; margin:10px 0;">▶ Add staff</a>
+        <a href="/manager/see_all" style="display:block; color:#4caf50; margin:10px 0;">▶See all</a>
+    </div>
+
+    <div class="card" style="flex:1; min-width:200px;">
+        <div class="section-title">Clerk</div>
+        <a href="/realtor/register_deal" style="display:block; color:#4caf50; margin:10px 0;">▶ Deal</a>
+    </div>
+
+</div>
+{% endblock %}
