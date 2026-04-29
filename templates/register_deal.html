@@ -12,16 +12,16 @@
         <label>ID staff</label>
         <input type="number" name="employee_id" required>
 
-        <label>amount</label>
+        <label>Amount</label>
         <input type="number" step="0.01" name="amount" required>
 
         <label>Deal type</label>
         <select name="action">
             <option value="1">Rent</option>
-            <option value="2">sell</option>
+            <option value="2">Sell</option>
         </select>
 
-        <button type="submit">Make a deal</button>
+        <button type="submit">Deal</button>
     </form>
 
     {% if message %}
