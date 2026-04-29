@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <title>System</title>
+    <style>
+        body { font-family: monospace; background: #1a1a1a; color: #e0e0e0; margin: 0; padding: 20px; }
+        nav { background: #2a2a2a; padding: 12px 20px; margin-bottom: 30px; border-left: 4px solid #4caf50; }
+        nav a { color: #4caf50; text-decoration: none; margin-right: 20px; }
+        nav a:hover { text-decoration: underline; }
+        h2 { color: #4caf50; }
+        .card { background: #2a2a2a; padding: 24px; max-width: 480px; border-radius: 4px; }
+        label { display: block; margin: 12px 0 4px; font-size: 13px; color: #aaa; }
+        input, select {
+            width: 100%; padding: 8px 10px; background: #1a1a1a;
+            border: 1px solid #444; color: #e0e0e0; border-radius: 3px;
+            box-sizing: border-box; font-family: monospace; font-size: 14px;
+        }
+        button {
+            margin-top: 18px; padding: 10px 24px; background: #4caf50;
+            color: #000; border: none; cursor: pointer; font-family: monospace;
+            font-size: 14px; font-weight: bold; border-radius: 3px;
+        }
+        button:hover { background: #66bb6a; }
+        .message { margin-top: 18px; padding: 10px 14px; border-radius: 3px; font-size: 14px; }
+        .message.ok  { background: #1b3a1f; border-left: 4px solid #4caf50; color: #a5d6a7; }
+        .message.err { background: #3a1b1b; border-left: 4px solid #e53935; color: #ef9a9a; }
+        .section-title { color: #888; font-size: 12px; text-transform: uppercase;
+                         letter-spacing: 2px; margin-bottom: 16px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; margin-bottom: 25px; }
+        th, td { padding: 10px 12px; border: 1px solid #444; text-align: left; font-size: 14px; }
+        th { background: #1b3a1f; color: #4caf50; border-bottom: 2px solid #4caf50; }
+        tbody tr:hover { background: #333; }
+        hr { border: none; border-top: 1px solid #444; margin: 30px 0; }
+        .archived {opacity: 0.4;}
+    </style>
+</head>
+<body>
+<nav>
+    <strong style="color:#fff; margin-right:30px;">🏢 realtor_system</strong>
+    <span style="color:#555">|</span>
+    <a href="/manager/add_object">add object</a>
+    <a href="/manager/add_client">add client</a>
+    <a href="/manager/add_staff">add_staff</a>
+    <a href="/manager/see_all">see all</a>
+    <span style="color:#555">|</span>
+    <a href="/realtor/register_deal">register a deal</a>
+</nav>
+{% block content %}{% endblock %}
+</body>
+</html>
