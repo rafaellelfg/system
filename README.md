@@ -4,7 +4,9 @@
 A web-based Real Estate Management System designed to handle property listings, client registrations, staff management, and real estate deals. 
 
 This project was built using **Python** and **Flask**, integrated with a PostgreSQL database using **`psycopg2`**. The development of this application was accelerated and assisted by **AI**.
+
 Disclaimer !!! I used Ai during the work with flask, it is a new framework for me
+
 ## ✨ Features
 
 * **Property Management**: Add new properties, view active listings, and safely archive (soft-delete) or restore properties.
