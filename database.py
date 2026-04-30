@@ -6,11 +6,11 @@ import psycopg2
 def get_db():
     """Create and return a new database connection and cursor."""
     conn = psycopg2.connect(
-        dbname="robert_db",
-        user="robert",
-        password="sosal1337",
+        dbname="----", #put here your name , data and password
+        user="----",
+        password="----",
         host="127.0.0.1",
-        port="1337"
+        port="----"
     )
     return conn, conn.cursor()
 
