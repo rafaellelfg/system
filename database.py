@@ -1,8 +1,5 @@
 import psycopg2
-# ==========================================
 # DATABASE CONNECTION
-# ==========================================
-
 def get_db():
     """Create and return a new database connection and cursor."""
     conn = psycopg2.connect(
@@ -15,9 +12,7 @@ def get_db():
     return conn, conn.cursor()
 
 
-# ==========================================
 # BLOCK 1: Data operations
-# ==========================================
 
 def add_object(cursor, conn, address, total_area, type_id, price):
     """
